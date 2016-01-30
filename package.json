@@ -1,0 +1,22 @@
+{
+  "name": "x-weekly-client",
+  "version": "0.0.1",
+  "description": "Client application for X-weekly",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nighca/X-weekly-client.git"
+  },
+  "keywords": [
+    "X",
+    "X-client",
+    "X-weekly"
+  ],
+  "author": "nighca@live.cn",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0"
+  }
+}
