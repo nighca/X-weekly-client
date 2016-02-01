@@ -4,7 +4,9 @@
   "description": "Client application for X-weekly",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "release-linux": "electron-packager . weekly --platform=linux --arch=x64 --out=release --ignore=\"release|node_modules\" --asar",
+    "release-windows": "electron-packager . weekly --platform=win32 --arch=ia32 --out=release --ignore=\"release|node_modules\" --asar"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   ],
   "author": "nighca@live.cn",
   "devDependencies": {
+    "electron-packager": "^5.2.1",
     "electron-prebuilt": "^0.36.0"
   }
 }
